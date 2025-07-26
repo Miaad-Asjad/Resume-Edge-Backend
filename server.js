@@ -14,8 +14,8 @@ app.use(express.json());
 // Routes
 app.use("/api/contact", contactRoutes);
 
-app.get("/", (req, res) => {
-  res.send("🎉 Resume Edge Backend is Live!");
+app.get("/", (_req, res) => {
+  res.send("Resume Edge Backend is Live!");
 });
 
 // Start server
