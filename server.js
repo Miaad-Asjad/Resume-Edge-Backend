@@ -14,6 +14,10 @@ app.use(express.json());
 // Routes
 app.use("/api/contact", contactRoutes);
 
+app.get("/", (req, res) => {
+  res.send("🎉 Resume Edge Backend is Live!");
+});
+
 // Start server
 const PORT = process.env.PORT || 7000;
 app.listen(PORT, () => {
